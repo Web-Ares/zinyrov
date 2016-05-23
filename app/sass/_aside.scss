@@ -6,55 +6,70 @@
   text-align: left;
 }
 .aside__item{
-  padding: 20px 27px;
+  padding: 18px 27px 0;
   margin-bottom: 30px;
   border-radius: 5px;
-  border: 2px solid #f7fbff;
+  border: 2px solid #EBEFF3;
 }
 .aside__subscribe{
-  padding: 20px 16px;
+  padding: 18px 16px;
   margin-bottom: 30px;
   border-radius: 5px;
   background: #f1f1f1;
 }
+.aside__subscribe span{
+  padding-left: 10px;
+}
 .aside__subscribe .aside__appointment{
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0;
+  padding: 10px 0;
   font-size: 16px;
 }
 .aside__link:hover{
   text-decoration: none;
 }
 .aside h2{
-  margin-bottom: 10px;
-  color:#010101;
+  margin-bottom: 21px;
+  color: #010101;
   font-size: 18px;
   text-transform: uppercase;
 }
+.aside__subscribe h2{
+  padding-left: 13px;
+  line-height: 21px;
+  margin-bottom: 14px;
+}
 .aside__item h3{
+  margin-top: 18px;
   margin-bottom: 10px;
   font-size: 18px;
-  color:#606060;
+  color: #606060;
 }
 .aside__link{
   display: block;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 14px;
   color: #616161;
   text-decoration: underline;
 }
+.aside__item .aside__link:last-child{
+  margin-bottom: 18px;
+}
 .aside__item-name{
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 16px;
 }
 .aside__item p{
   font-size: 14px;
   font-style: italic;
+  line-height: 20px;
 }
 .aside__appointment{
   display: block;
-  padding: 15px 0;
+  padding: 15px 10px;
   margin-bottom: 30px;
   border-radius: 5px;
   color: #fff;
@@ -66,19 +81,38 @@
   transition: opacity .3s ease;
   -webkit-transition: opacity .3s ease;
 }
+.aside__appointment span{
+  display: block;
+}
 .aside__appointment:hover{
   opacity: .7;
 }
-
-
-@media (min-width: $tablet-portrait) {
+.aside__item_articles{
+  padding-right: 13px;
+}
+.aside__item_articles h2{
+  margin-bottom: 17px;
+}
+.aside__item_articles .aside__link{
+  margin-bottom: 10px;
+  line-height: 14px;
+}
+.aside__item_reviews{
+  padding-right: 13px;
+  padding-bottom: 15px;
+}
+.aside__item_reviews h2{
+  margin-bottom: 24px;
+}
+.aside__item_reviews{
 
 }
 
 @media (min-width: $tablet-landscape) {
 
   .aside{
-    width: 218px;
+    width: 22%;
+    max-width: 218px;
     padding: 0;
   }
 }

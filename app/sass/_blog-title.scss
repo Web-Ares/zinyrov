@@ -1,5 +1,5 @@
 .blog-title{
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   background: #f2f2f2;
   text-align: right;
 }
@@ -13,10 +13,11 @@
 .blog-title h1{
   font-size: 46px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .blog-title a{
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
   color: #000;
   font-size: 20px;
   text-decoration: underline;
@@ -28,6 +29,6 @@
 @media (min-width: $desktop) {
 
   .blog-title__wrap {
-    padding: 40px 0 0;
+    padding: 38px 13px 0;
   }
 }
