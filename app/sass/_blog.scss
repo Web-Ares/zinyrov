@@ -100,7 +100,7 @@
 
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet-landscape) {
 
   .blog {
     display: flex;
@@ -116,6 +116,13 @@
   }
   .blog__content-smaller{
     margin: 0;
+  }
+  .site__wrap .blog__content_smaller-big{
+    width: 100%;
+    max-width: 100%;
+  }
+  .site__wrap .blog__content-smaller {
+    width: 227px;
   }
 
 }

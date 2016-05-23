@@ -58,6 +58,22 @@
   }
 
 }
+.site__wrap{
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.site__wrap:after{
+  display: inline-block;
+  width: 100%;
+  content: "";
+}
+.site__wrap .site__content{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
 
 @media (min-width: $tablet-portrait) {
 
@@ -68,6 +84,12 @@
     background: url('../img/bg-footer.jpg') no-repeat top center #000;
   }
 
+}
+
+@media (min-width: $tablet-landscape) {
+  .site__wrap .site__content{
+    width: 741px;
+  }
 }
 
 @media (min-width: $desktop) {

@@ -1,0 +1,26 @@
+.pagination{
+  display: block;
+  padding-left:20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #000;
+
+}
+.pagination a{
+  display: inline-block;
+  vertical-align: middle;
+  width:25px;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 15px;
+  color: #000;
+  background: #e4e4e4;
+  text-align: center;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.pagination .active,
+.pagination a:hover{
+  background: #717b89;
+  color: #fff;
+}
