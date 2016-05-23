@@ -1,0 +1,99 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  color: $btn-color;
+  font-size: 20px;
+  background-color: $btn-back;
+  text-transform: uppercase;
+  @include oneEvent(background-color);
+
+  span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 22px;
+  }
+
+  &:hover {
+    background-color: $btn-back-hover;
+  }
+
+  &:active {
+    color: $btn-color-active;
+    background-color: $btn-back-active;
+  }
+
+  &_1 {
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 22px;
+
+    span{
+      padding: 8px 15px 9px;
+    }
+
+  }
+
+  &_2 {
+    margin-top: 15px;
+    color: $btn-2-color;
+    background: $btn-2-back;
+
+    &:hover {
+      background: $btn-2-back-hover;
+    }
+
+    &:active {
+      background: $btn-2-back-hover;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .btn {
+
+    &_1 {
+      font-size: 22px;
+      line-height: 26px;
+
+      span{
+        padding: 10px 25px;
+      }
+
+    }
+
+    &_2 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .btn {
+
+    &_1 {
+      font-size: 31px;
+      line-height: 37px;
+
+      span{
+        padding: 18px 36px 19px;
+      }
+
+    }
+
+    &_2 {
+      font-size: 20px;
+    }
+
+  }
+
+}

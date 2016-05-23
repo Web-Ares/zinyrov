@@ -1,0 +1,58 @@
+.social {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__item{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 13px;
+    margin-bottom: 12px;
+    background-image: url('../img/icons-social.png');
+  }
+
+  &__item_fb{
+    background-position: 0 0;
+  }
+
+  &__item_vk{
+    background-position: -43px 0;
+  }
+
+  &__item_ig{
+    background-position: -86px 0;
+  }
+
+  &__item_fr{
+    background-position: -128px 0;
+  }
+
+  &__item_yt{
+    background-position: -171px 0;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .social {
+    position: absolute;
+    top: 293px;
+    right: 0;
+    width: 186px;
+    padding-right: 25px;
+
+    &__item{
+      @include oneEvent(opacity);
+
+      &:hover{
+        opacity: .8;
+      }
+
+    }
+
+  }
+
+}

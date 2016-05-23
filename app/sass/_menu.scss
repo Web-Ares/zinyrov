@@ -1,0 +1,132 @@
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 55px 25px;
+  background-color: rgba(255,255,255,.9);
+  font-size: 24px;
+  text-align: center;
+  z-index: 9;
+  @include duoEvent(opacity, visibility);
+
+  li{
+    margin-bottom: 15px;
+  }
+
+  &__item{
+    margin-left: 18px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #616161;
+    color: #616161;
+    @include oneEvent(border-bottom-color);
+
+    &:hover{
+      border-bottom-color: transparent;
+    }
+
+  }
+
+}
+
+.menu_visible{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-btn{
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  width: 33px;
+  margin-right: 17px;
+  padding: 9px 0;
+  z-index: 10;
+  cursor: pointer;
+
+  span{
+    display: block;
+    width: inherit;
+    height: 3px;
+    background-color: #000;
+    @include oneEvent(background-color);
+
+    &:before,
+    &:after{
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background-color: inherit;
+      content: '';
+      transition: top .3s ease, transform .3s ease, background-color .3s ease;
+      -webkit-transition: top .3s ease, transform .3s ease, background-color .3s ease;
+    }
+
+    &:before{
+      top: 0;
+    }
+
+    &:after{
+      bottom: 0;
+    }
+
+  }
+
+}
+
+.menu-btn_close{
+
+  span{
+    background-color: transparent;
+
+    &:before{
+      top: 9px;
+      background-color: #0065c4;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &:after{
+      bottom: 9px;
+      background-color: #0065c4;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .menu {
+    flex-flow: row nowrap;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    margin-right: 17px;
+    padding: 0;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: left;
+
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .menu-btn{
+    display: none;
+  }
+
+}
