@@ -33,6 +33,8 @@
   margin-bottom: 21px;
   color: #010101;
   font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .aside__subscribe h2{
@@ -69,8 +71,9 @@
 }
 .aside__appointment{
   display: block;
+  max-width: 230px;
+  margin: 0 auto 30px;
   padding: 15px 10px;
-  margin-bottom: 30px;
   border-radius: 5px;
   color: #fff;
   font-size: 18px;
